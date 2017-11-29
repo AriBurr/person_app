@@ -2,7 +2,7 @@ class NotesController < ApplicationController
   before_action :find_person
 
   def create
-    @note = @person.notes.create(note_params.permit(:body))
+    @note = @person.notes.create(note_params)
     redirect_to person_path(@person)
   end
 

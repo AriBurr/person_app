@@ -1,9 +1,15 @@
 <div class="container">
   <h1>Person</h1>
   <hr>
-  
+
   <ul>
-    <li>Name: <%= @person.name %></li>
+    <li>
+      <% if @person.alive %>
+        Name: <%= @person.name %>
+      <% else %>
+        Name: <%= @person.name %>, deceased
+      <% end %>
+    </li>
     <li>Age: <%= @person.age %></li>
     <li>Gender: <%= @person.gender %></li>
     <li>Hair Color: <%= @person.hair_color %></li>
