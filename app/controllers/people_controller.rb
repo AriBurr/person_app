@@ -2,7 +2,7 @@ class PeopleController < ApplicationController
   before_action :find_person, only: [:show, :edit, :update, :destroy]
 
   def index
-    @people = Person.paginate(page: params[:page])
+    @people = Person.paginate(page: params[:page], :per_page => 10)
   end
 
   def show

@@ -3,7 +3,7 @@ hair_colors = ['Black', 'Brown', 'Blond', 'Red', 'White', 'Gray', 'Other']
 eye_colors = ['Amber', 'Blue', 'Brown', 'Gray', 'Green', 'Hazel', 'Violet', 'Other']
 is_alive = [true, false]
 
-30.times do |n|
+100.times do |n|
   name = Faker::Name.name
   age =  rand(1..100)
   gender = genders.sample

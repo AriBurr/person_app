@@ -1,0 +1,4 @@
+<p><%= note.body %></p>
+<%= link_to 'Delete Note', [note.person, note], method: :delete,
+                                                data:{ confirm: 'Are you sure?'},
+                                                class: 'btn btn-danger' %>
