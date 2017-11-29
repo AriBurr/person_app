@@ -29,7 +29,7 @@ class PeopleController < ApplicationController
   def update
     if @person.update(person_params)
       flash[:success] = "Succesful update! Yay!"
-      redirect_to people_path(@person)
+      redirect_to person_path(@person)
     else
       flash[:error] = "Invalid update. Please try again."
       render 'edit'
